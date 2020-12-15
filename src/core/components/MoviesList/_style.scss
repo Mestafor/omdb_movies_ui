@@ -1,0 +1,24 @@
+.movie-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    &__item {
+        width: 300px;
+        flex: 0 0 auto;
+        
+        &:not(last-child) {
+            margin-right: 30px;
+        }
+
+        &:first-child {
+            padding-left: 15px;
+        }
+
+        &:last-child {
+            padding-right: 15px;
+        }
+    }
+}
